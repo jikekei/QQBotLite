@@ -1,0 +1,8 @@
+.tools/
+dist/
+**/bin/
+**/obj/
+config.json
+config.json.tmp
+plugin-*.yml
+*.log

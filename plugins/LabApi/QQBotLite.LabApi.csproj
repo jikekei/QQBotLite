@@ -1,0 +1,3 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><AssemblyName>QQBotLite.LabApi</AssemblyName></PropertyGroup>
+</Project>

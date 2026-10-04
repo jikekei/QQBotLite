@@ -1,0 +1,28 @@
+{
+  "adapter": "napcat",
+  "napcat": {
+    "url": "ws://127.0.0.1:3001",
+    "token": ""
+  },
+  "official": {
+    "app_id": "",
+    "app_secret": "",
+    "transport": "websocket",
+    "sandbox": false,
+    "listen": "127.0.0.1:8080",
+    "path": "/qq/webhook"
+  },
+  "bridge_listen": "127.0.0.1:17890",
+  "servers": [
+    {
+      "id": "31140",
+      "name": "1服",
+      "token": "REPLACE_WITH_RANDOM_TOKEN_FROM_SETUP"
+    }
+  ],
+  "allowed_groups": [],
+  "administrator_ids": [],
+  "alert_groups": [],
+  "alert_users": [],
+  "status_image": ""
+}
