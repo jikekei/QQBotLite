@@ -48,7 +48,7 @@ try {
     }
     Copy-Item -LiteralPath (Join-Path $projectRoot 'plugins\LabApi\bin\Release\net48\QQBotLite.LabApi.dll') -Destination (Join-Path $runtimeRoot 'plugins\LabAPI') -Force
     Copy-Item -LiteralPath (Join-Path $projectRoot 'plugins\Exiled\bin\Release\net48\QQBotLite.Exiled.dll') -Destination (Join-Path $runtimeRoot 'plugins\EXILED') -Force
-    foreach ($name in @('README.md','LICENSE','config.example.json','THIRD_PARTY_NOTICES.txt')) {
+    foreach ($name in @('README.md','LICENSE','VERSION','CHANGELOG.zh.md','config.example.json','THIRD_PARTY_NOTICES.txt')) {
         Copy-Item -LiteralPath (Join-Path $projectRoot $name) -Destination $runtimeRoot -Force
     }
     Copy-Item -Path (Join-Path $projectRoot 'scripts\*.cmd') -Destination $runtimeRoot -Force

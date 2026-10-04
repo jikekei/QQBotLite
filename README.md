@@ -10,6 +10,7 @@
 
 <p align="center">
   <a href="#快速开始">开始使用</a> ·
+  <a href="https://github.com/jikekei/QQBotLite/releases/latest/download/QQBotLite-win-x64.zip">下载运行包</a> ·
   <a href="#指令速查">指令速查</a> ·
   <a href="#权限与消息发送">权限设置</a> ·
   <a href="docs/plugins.md">插件安装</a> ·
@@ -31,7 +32,7 @@
 
 ## 快速开始
 
-> **下载说明：** GitHub 当前提供源码，尚未上传预编译 Release。`Code → Download ZIP` 下载的是源码包，需要按下方说明编译。已有 `QQBotLite-win-x64.zip` 运行包时，可直接从第 1 步开始。
+> **下载运行包：** 从 [Releases](https://github.com/jikekei/QQBotLite/releases/latest) 下载 **[QQBotLite-win-x64.zip](https://github.com/jikekei/QQBotLite/releases/latest/download/QQBotLite-win-x64.zip)**，解压后按下面三步配置。`QQBotLite-source.zip` 和 `Code → Download ZIP` 是源码，需要自行编译。
 
 ### 有运行包：三步接入
 
@@ -166,6 +167,7 @@ NapCat 填写数字 QQ 号 / 群号；官方 API 填写实际事件中的用户 
 | [QQ 接入](docs/qq-adapters.md) | NapCat、官方 WebSocket / Webhook 与常见问题 |
 | [开发说明](docs/development.md) | 构建依赖与打包 |
 | [桥接协议](docs/protocol.md) | WebSocket 鉴权、JSON-RPC、请求去重与超时 |
+| [更新记录](CHANGELOG.zh.md) | 版本功能与下载说明 |
 
 ## 许可
 
