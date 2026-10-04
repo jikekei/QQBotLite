@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">QQBotLite 通信示意</title>
+  <desc id="desc">选择 NapCat 或 QQ 官方 API 接入 QQBotLite。机器人通过带 Token 的 WebSocket 与 LabAPI 或 EXILED 插件通信，查询和管理 SCP:SL 服务器。</desc>
+  <rect width="1200" height="340" rx="20" fill="#101c27"/>
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <g id="qq-adapters">
+      <text x="220" y="88" font-size="48" font-weight="700" fill="#edf3f7">QQ</text>
+      <text x="220" y="159" font-size="42" fill="#bccad4">NapCat</text>
+      <text x="220" y="214" font-size="42" fill="#bccad4">QQ API</text>
+    </g>
+    <g id="bot">
+      <rect x="412" y="44" width="376" height="212" rx="12" fill="#19313d"/>
+      <text x="600" y="115" font-size="48" font-weight="700" fill="#edf3f7">QQBotLite</text>
+      <text x="600" y="186" font-size="40" fill="#72dbc3">Go · EXE</text>
+    </g>
+    <g id="game-server">
+      <text x="985" y="88" font-size="48" font-weight="700" fill="#edf3f7">SCP:SL</text>
+      <text x="985" y="159" font-size="42" fill="#bccad4">LabAPI</text>
+      <text x="985" y="214" font-size="42" fill="#bccad4">EXILED</text>
+    </g>
+    <text x="600" y="306" font-size="34" fill="#bccad4">WebSocket · Token · JSON-RPC 2.0</text>
+  </g>
+  <g id="message-flow" fill="none" stroke="#72dbc3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M334 147h54m-12-10 12 10-12 10M388 177h-54m12-10-12 10 12 10"/>
+    <path d="M812 147h54m-12-10 12 10-12 10M866 177h-54m12-10-12 10 12 10"/>
+  </g>
+</svg>

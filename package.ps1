@@ -23,6 +23,7 @@ foreach($name in @('QQBotLite.exe','README.md','LICENSE','config.example.json','
 }
 $runtimeFiles+=@(Get-ChildItem -LiteralPath (Join-Path $runtimeRoot 'plugins') -File -Recurse -Filter '*.dll' | ForEach-Object FullName)
 $runtimeFiles+=@(Get-ChildItem -LiteralPath (Join-Path $runtimeRoot 'docs') -File -Filter '*.md' | ForEach-Object FullName)
+$runtimeFiles+=@(Get-ChildItem -LiteralPath (Join-Path $runtimeRoot 'assets\readme') -File -Filter '*.svg' | ForEach-Object FullName)
 Write-Zip (Join-Path $distRoot 'QQBotLite-win-x64.zip') $runtimeRoot $runtimeFiles 'QQBotLite'
 $sourceFiles=@()
 foreach($name in @('.gitignore','README.md','LICENSE','config.example.json','THIRD_PARTY_NOTICES.txt','build.ps1','package.ps1')) { $sourceFiles+=Join-Path $projectRoot $name }
@@ -30,6 +31,7 @@ $sourceFiles+=@(Get-ChildItem -LiteralPath (Join-Path $projectRoot 'bot') -File 
 foreach($dir in @('plugins','tests','docs','scripts')) {
     $sourceFiles+=@(Get-ChildItem -LiteralPath (Join-Path $projectRoot $dir) -File -Recurse | Where-Object { $_.FullName -notmatch '[\\/](bin|obj)[\\/]' -and $_.Extension -in @('.cs','.csproj','.props','.md','.cmd') } | ForEach-Object FullName)
 }
+$sourceFiles+=@(Get-ChildItem -LiteralPath (Join-Path $projectRoot 'assets\readme') -File -Filter '*.svg' | ForEach-Object FullName)
 Write-Zip (Join-Path $distRoot 'QQBotLite-source.zip') $projectRoot $sourceFiles 'QQBotLite'
 $manifest=@()
 foreach($path in @((Join-Path $distRoot 'QQBotLite-win-x64.zip'),(Join-Path $distRoot 'QQBotLite-source.zip'))+$runtimeFiles) {

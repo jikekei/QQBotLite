@@ -53,6 +53,9 @@ try {
     }
     Copy-Item -Path (Join-Path $projectRoot 'scripts\*.cmd') -Destination $runtimeRoot -Force
     Copy-Item -Path (Join-Path $projectRoot 'docs\*.md') -Destination (Join-Path $runtimeRoot 'docs') -Force
+    $readmeAssets=Join-Path $runtimeRoot 'assets\readme'
+    New-Item -ItemType Directory -Path $readmeAssets -Force | Out-Null
+    Copy-Item -Path (Join-Path $projectRoot 'assets\readme\*.svg') -Destination $readmeAssets -Force
     & (Join-Path $projectRoot 'package.ps1')
     if ($LASTEXITCODE -ne 0) { throw 'Packaging failed' }
     Write-Host "Built: $runtimeRoot"
