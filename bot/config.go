@@ -170,7 +170,7 @@ func setup(path string) (Config, error) {
 		}
 		return s
 	}
-	fmt.Println("\n幻梦 QQBotLite — 首次配置 / 重新配置（Ctrl+C 取消）")
+	fmt.Println("\nQQBotLite — 首次配置 / 重新配置（Ctrl+C 取消）")
 	fmt.Println("回车保留方括号内的值；输入 - 可清空可选项。")
 	mode := ask("接入方式：1=NapCat，2=QQ 官方 API", map[bool]string{true: "2", false: "1"}[c.Adapter == "official"])
 	if mode == "2" {

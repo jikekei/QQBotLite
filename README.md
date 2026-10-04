@@ -1,4 +1,4 @@
-<h1 align="center">幻梦 QQBotLite</h1>
+<h1 align="center">QQBotLite</h1>
 
 <p align="center">在 QQ 中查询、管理 SCP:SL 服务器，让玩家求助及时到达管理员。</p>
 
